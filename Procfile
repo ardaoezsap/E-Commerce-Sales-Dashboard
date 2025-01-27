@@ -1,1 +1,1 @@
-web: streamlit run app/dashboard.py --server.port $PORT
+web: PYTHONPATH=. streamlit run app/dashboard.py --server.port $PORT
