@@ -1,18 +1,19 @@
 # Copyright (c) 2025 Arda Özsap
 # Licensed under the MIT License (see LICENSE for details)
 
+import os
+import sys
 import pandas as pd
 import streamlit as st
-from app.tabs.sales_overview import render_sales_overview
-from tabs.product_performance import render_product_performance
-from tabs.customer_insights import render_customer_insights
-from tabs.sales_forecasting_tab import render_sales_forecasting
-from tabs.regional_analysis import render_regional_analysis
-from tabs.login_tab import render_login_tab
-from tabs.order_analysis import render_order_analysis
-from chatbot.chatbot import ask_question
-import sys
-import os
+from .tabs.sales_overview import render_sales_overview
+from .tabs.product_performance import render_product_performance
+from .tabs.customer_insights import render_customer_insights
+from .tabs.sales_forecasting_tab import render_sales_forecasting
+from .tabs.regional_analysis import render_regional_analysis
+from .tabs.login_tab import render_login_tab
+from .tabs.order_analysis import render_order_analysis
+from .chatbot.chatbot import ask_question
+
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
