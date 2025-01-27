@@ -132,7 +132,7 @@ def filter_data(data):
         )
         & (data["Order.Date"] >= start_date)
         & (data["Order.Date"] <= end_date)
-        ]
+    ]
     return filtered
 
 

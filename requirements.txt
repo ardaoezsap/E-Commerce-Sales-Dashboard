@@ -8,3 +8,4 @@ prophet==1.1.6
 bcrypt~=4.2.1
 python-dateutil~=2.9.0.post0
 networkx~=3.4.2
+pathlib
