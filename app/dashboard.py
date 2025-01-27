@@ -5,14 +5,15 @@ from pathlib import Path
 import sys
 import pandas as pd
 import streamlit as st
-from .tabs.sales_overview import render_sales_overview
-from .tabs.product_performance import render_product_performance
-from .tabs.customer_insights import render_customer_insights
-from .tabs.sales_forecasting_tab import render_sales_forecasting
-from .tabs.regional_analysis import render_regional_analysis
-from .tabs.login_tab import render_login_tab
-from .tabs.order_analysis import render_order_analysis
-from .chatbot.chatbot import ask_question
+from app.tabs.sales_overview import render_sales_overview
+from app.tabs.product_performance import render_product_performance
+from app.tabs.customer_insights import render_customer_insights
+from app.tabs.sales_forecasting_tab import render_sales_forecasting
+from app.tabs.regional_analysis import render_regional_analysis
+from app.tabs.login_tab import render_login_tab
+from app.tabs.order_analysis import render_order_analysis
+from app.chatbot.chatbot import ask_question
+
 
 root_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(root_dir))
