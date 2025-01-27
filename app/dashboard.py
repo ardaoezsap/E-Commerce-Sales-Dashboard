@@ -1,7 +1,7 @@
 # Copyright (c) 2025 Arda Özsap
 # Licensed under the MIT License (see LICENSE for details)
 
-import os
+from pathlib import Path
 import sys
 import pandas as pd
 import streamlit as st
@@ -14,8 +14,8 @@ from .tabs.login_tab import render_login_tab
 from .tabs.order_analysis import render_order_analysis
 from .chatbot.chatbot import ask_question
 
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+root_dir = Path(__file__).resolve().parent.parent
+sys.path.append(str(root_dir))
 
 
 def initialize_session_state(defaults):
@@ -31,7 +31,6 @@ def load_and_prepare_data(file_path):
 
 
 def render_sidebar_profile():
-
     with st.sidebar.expander("🔑 Profile", expanded=False):
         st.write(f"**Name**: {st.session_state['name']}")
         st.write(f"**Surname**: {st.session_state['surname']}")
@@ -132,7 +131,7 @@ def filter_data(data):
         )
         & (data["Order.Date"] >= start_date)
         & (data["Order.Date"] <= end_date)
-    ]
+        ]
     return filtered
 
 
