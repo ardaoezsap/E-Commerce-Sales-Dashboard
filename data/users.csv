@@ -1,0 +1,4 @@
+username,password,role,name,surname
+admin,$2b$12$QDYUdw7rjuBe3noMGMTIrOlsxlxQuzcZpyckUEAoXtuPXyrCmk8fy,admin,John,Doe
+user1,$2b$12$puTIHe.qPd2RC5jQM1Z20eWHa24ajzMZz6f.5B5bdOSMxa/Gktugi,user,Jane,Smith
+user2,$2b$12$7JzsMT2VuRrcwoEqlMNteeNhbS8dFZE/gCP0vYMO.2fABhU4CW4Ry,user,Alice,Johnson

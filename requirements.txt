@@ -1,0 +1,10 @@
+streamlit==1.41.0
+pandas==2.1.1
+plotly==5.18.0
+scikit-learn==1.5.0
+numpy==1.26.0
+statsmodels==0.14.0
+prophet==1.1.6
+bcrypt~=4.2.1
+python-dateutil~=2.9.0.post0
+networkx~=3.4.2
