@@ -1,5 +1,5 @@
 import streamlit as st
-from app.utils.data_processing import aggregate_sales_by_column
+from ..utils.data_processing import aggregate_sales_by_column
 from app.utils.visualizations import (
     create_line_chart,
     create_bar_chart,
